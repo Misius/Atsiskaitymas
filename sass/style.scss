@@ -48,10 +48,12 @@ header {
     position: absolute;
     height: 340px;
     top: 60px;
-    left: 240px;
+    left: 260px;
     max-width: auto;
-   // width: 189.62px;
+    width: 190px;
     object-fit: cover;
+    object-position: 0 0;
+    
 }
 
 .launching {
@@ -139,15 +141,20 @@ header {
     grid-template-columns: repeat(2, 1fr);
     margin: 4rem 2rem 56px 2rem;
     gap: 27px;
+    .display-none {
+        display: none;
+    }
+    .logo1 {
+        height: 100%;
+        width: 155px;
+        object-fit: cover;
+        object-position: 0 0;
+
+    }
 }
 
-.logo1 {
-    height: 100%;
-    width: 155px;
-    object-fit: cover;
-    object-position: 0 0;
 
-}
+
 
 // ===================================================================
 
@@ -270,14 +277,14 @@ header {
 
 
 .divider {
-    width: 428px;
+    width: 100%;
     height: 2px;
     background-color: #EEEEEE;
     margin-top: 92px;
     margin-bottom: 62px;
 }
 .divider2 {
-    width: 428px;
+    width: 100%;
     height: 2px;
     background-color: #EEEEEE;
     margin-bottom: 4rem;
@@ -333,6 +340,7 @@ header {
     i {
         margin-top: 0;
         margin-bottom: 4rem;
+        color: #999999;
     }
     .footer-text {
         font-weight: 400;
@@ -369,6 +377,15 @@ header {
     margin-bottom: 40px;
 }
 .copy {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #999999;
+    margin-left: 2rem;
+    margin-bottom: 105px;
+}
+.copy2 {
+    display: none;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;

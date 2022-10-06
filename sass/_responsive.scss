@@ -40,13 +40,14 @@
             height: 675px;
             top: 120px;
             left: 700px;
+            width: 675px;
         }
         .launching-text {
             width: 537px;
             margin-bottom: 41px;
         }
         button {
-            margin-bottom: 200px;
+            margin-bottom: 140px;
         }
 
     }
@@ -66,4 +67,65 @@
         }
         
     }
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 10rem 80px 10rem 80px;
+        gap: 106px;
+        .display-none {
+            display: block;
+        } 
+        .logo1 {
+            width: 240px;
+            
+        }
+    }
+    .auction {
+        margin-left: 80px;
+    }
+    .soon-container {
+        margin-left: 80px;
+        margin-right: 80px;
+        .divider {
+            margin-bottom: 120px;
+        }
+        .soon {
+            margin-left: 0;
+            .soon-header {
+                width: 620px;
+            }
+            .soon-text {
+                width: 537px;
+            }
+            button {
+                margin-bottom: 120px;
+            }
+            .img {
+                top: 2302px;
+                left: 900px;
+               
+            }
+        }
+    }
+    .super-footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 80px;
+        margin-top: 80px;
+        margin-right: 80px;
+        margin-bottom: 71px;
+        .footer-grid {
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            grid-column: span 2;
+            .copy2 {
+                display: block;
+            }
+        }
+    }
+
 }

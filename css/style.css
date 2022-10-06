@@ -44,13 +44,14 @@
     height: 675px;
     top: 120px;
     left: 700px;
+    width: 675px;
   }
   .launching .launching-text {
     width: 537px;
     margin-bottom: 41px;
   }
   .launching button {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
   }
   .background {
     height: 320px;
@@ -66,6 +67,67 @@
     margin-left: 4rem;
     margin-top: 140px;
     width: 620px;
+  }
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10rem 80px 10rem 80px;
+    gap: 106px;
+  }
+  .logo-grid .display-none {
+    display: block;
+  }
+  .logo-grid .logo1 {
+    width: 240px;
+  }
+  .auction {
+    margin-left: 80px;
+  }
+  .soon-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .soon-container .divider {
+    margin-bottom: 120px;
+  }
+  .soon-container .soon {
+    margin-left: 0;
+  }
+  .soon-container .soon .soon-header {
+    width: 620px;
+  }
+  .soon-container .soon .soon-text {
+    width: 537px;
+  }
+  .soon-container .soon button {
+    margin-bottom: 120px;
+  }
+  .soon-container .soon .img {
+    top: 2302px;
+    left: 900px;
+  }
+  .super-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 71px;
+  }
+  .super-footer-container .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .super-footer-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-column: span 2;
+  }
+  .super-footer-container .bottom .copy2 {
+    display: block;
   }
 }
 body {
@@ -110,10 +172,13 @@ header .flex {
   position: absolute;
   height: 340px;
   top: 60px;
-  left: 240px;
+  left: 260px;
   max-width: auto;
+  width: 190px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
 }
 
 .launching {
@@ -197,8 +262,10 @@ header .flex {
   margin: 4rem 2rem 56px 2rem;
   gap: 27px;
 }
-
-.logo1 {
+.logo-grid .display-none {
+  display: none;
+}
+.logo-grid .logo1 {
   height: 100%;
   width: 155px;
   -o-object-fit: cover;
@@ -311,7 +378,7 @@ header .flex {
 }
 
 .divider {
-  width: 428px;
+  width: 100%;
   height: 2px;
   background-color: #EEEEEE;
   margin-top: 92px;
@@ -319,7 +386,7 @@ header .flex {
 }
 
 .divider2 {
-  width: 428px;
+  width: 100%;
   height: 2px;
   background-color: #EEEEEE;
   margin-bottom: 4rem;
@@ -374,6 +441,7 @@ header .flex {
 .footer-container i {
   margin-top: 0;
   margin-bottom: 4rem;
+  color: #999999;
 }
 .footer-container .footer-text {
   font-weight: 400;
@@ -409,6 +477,16 @@ header .flex {
 }
 
 .copy {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #999999;
+  margin-left: 2rem;
+  margin-bottom: 105px;
+}
+
+.copy2 {
+  display: none;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -459,13 +537,14 @@ header .flex {
     height: 675px;
     top: 120px;
     left: 700px;
+    width: 675px;
   }
   .launching .launching-text {
     width: 537px;
     margin-bottom: 41px;
   }
   .launching button {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
   }
   .background {
     height: 320px;
@@ -481,5 +560,66 @@ header .flex {
     margin-left: 4rem;
     margin-top: 140px;
     width: 620px;
+  }
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10rem 80px 10rem 80px;
+    gap: 106px;
+  }
+  .logo-grid .display-none {
+    display: block;
+  }
+  .logo-grid .logo1 {
+    width: 240px;
+  }
+  .auction {
+    margin-left: 80px;
+  }
+  .soon-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .soon-container .divider {
+    margin-bottom: 120px;
+  }
+  .soon-container .soon {
+    margin-left: 0;
+  }
+  .soon-container .soon .soon-header {
+    width: 620px;
+  }
+  .soon-container .soon .soon-text {
+    width: 537px;
+  }
+  .soon-container .soon button {
+    margin-bottom: 120px;
+  }
+  .soon-container .soon .img {
+    top: 2302px;
+    left: 900px;
+  }
+  .super-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 71px;
+  }
+  .super-footer-container .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .super-footer-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-column: span 2;
+  }
+  .super-footer-container .bottom .copy2 {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
