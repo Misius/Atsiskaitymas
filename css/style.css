@@ -15,6 +15,7 @@
     display: none;
   }
   header .menu {
+    display: inline-block;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
@@ -56,6 +57,7 @@
   .background {
     height: 320px;
     margin-left: 80px;
+    margin-right: 80px;
   }
   .background .bg {
     position: absolute;
@@ -166,6 +168,9 @@ header .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .menu {
+  display: none;
 }
 
 .launching-image {
@@ -508,6 +513,7 @@ header .flex {
     display: none;
   }
   header .menu {
+    display: inline-block;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
@@ -549,6 +555,7 @@ header .flex {
   .background {
     height: 320px;
     margin-left: 80px;
+    margin-right: 80px;
   }
   .background .bg {
     position: absolute;

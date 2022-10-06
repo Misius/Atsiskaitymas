@@ -11,6 +11,7 @@
             display: none;
         }
         .menu {
+            display: inline-block;
             font-weight: 400;
             font-size: 20px;
             line-height: 100%;
@@ -54,6 +55,7 @@
     .background {
         height: 320px;
         margin-left: 80px;
+        margin-right: 80px;
         .bg {
             position: absolute;
             left: 0;
