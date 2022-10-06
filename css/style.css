@@ -2,8 +2,65 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import 'reset.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&display=swap");
+@media screen and (min-width: 429px) {
+  header {
+    margin-top: 70px;
+  }
+  header .logo {
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  header .bars {
+    display: none;
+  }
+  header .menu {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #555555;
+    text-decoration: none;
+    margin-left: 28px;
+    margin-top: 10px;
+  }
+  header .last {
+    color: #FF3998;
+    margin-right: 80px;
+  }
+}
+.launching {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.launching .launching-header {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 116px;
+  width: 620px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.launching .launching-image {
+  position: absolute;
+  height: 675px;
+  top: 120px;
+  left: 700px;
+}
+.launching .launching-text {
+  width: 537px;
+  margin-bottom: 41px;
+}
+.launching button {
+  margin-bottom: 200px;
+}
+
 body {
   font-family: "inter";
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .colorful-button {
@@ -357,4 +414,56 @@ header .flex {
   color: #999999;
   margin-left: 2rem;
   margin-bottom: 105px;
+}
+
+@media screen and (min-width: 429px) {
+  header {
+    margin-top: 70px;
+  }
+  header .logo {
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  header .bars {
+    display: none;
+  }
+  header .menu {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #555555;
+    text-decoration: none;
+    margin-left: 28px;
+    margin-top: 10px;
+  }
+  header .last {
+    color: #FF3998;
+    margin-right: 80px;
+  }
+}
+.launching {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.launching .launching-header {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 116px;
+  width: 620px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.launching .launching-image {
+  position: absolute;
+  height: 675px;
+  top: 120px;
+  left: 700px;
+}
+.launching .launching-text {
+  width: 537px;
+  margin-bottom: 41px;
+}
+.launching button {
+  margin-bottom: 200px;
 }/*# sourceMappingURL=style.css.map */
