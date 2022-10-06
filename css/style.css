@@ -124,4 +124,20 @@ header .flex {
   line-height: 150%;
   margin-top: 0;
   color: #111111;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem 2rem 56px 2rem;
+  gap: 27px;
+}
+
+.logo1 {
+  height: 100%;
+  width: 155px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
 }/*# sourceMappingURL=style.css.map */

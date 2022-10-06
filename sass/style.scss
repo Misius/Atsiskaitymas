@@ -123,3 +123,16 @@ header {
 // ===================================================================
 
 
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 2rem 56px 2rem;
+    gap: 27px;
+}
+.logo1 {
+    height: 100%;
+    width: 155px;
+    object-fit: cover;
+    object-position: 0 0;
+    
+}
