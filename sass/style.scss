@@ -1,7 +1,26 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 @import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&display=swap');
+body {
+    font-family: 'inter';
+}
 
+.colorful-button {
+    cursor: pointer;
+    width: 188px;
+    height: 75px;
+    background-color: #fff;
+   
+    border: 4px solid #FF3998; 
+    border-color: linear-gradient(to right, #FF3998 0%,#FF3939 100%) 1;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    
+}
 
 header {
     .logo {
@@ -20,5 +39,47 @@ header {
         display: flex;
         justify-content: space-between;
         
+    }
+}
+
+.launching-image{
+    position: absolute;
+    height: 340px;
+    top: 60px;
+    left: 240px;
+
+}
+.launching {
+    margin-left: 2rem;
+    margin-bottom: 80px;
+    .launching-pink {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase; 
+        color: #FF3998;
+        margin-bottom: 24px;
+    }
+    .launching-header {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #111111;
+        width: 276px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        margin-right: 19px;
+    }
+    .launching-text {
+        width: 274px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #555555;
+        margin-bottom: 2rem;
     }
 }
