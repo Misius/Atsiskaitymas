@@ -16,7 +16,6 @@ body {
     border: 4px solid #FF3998;
     border-color: linear-gradient(to right, #FF3998 0%, #FF3939 100%) 1;
     border-radius: 100px;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
@@ -325,4 +324,62 @@ header {
         position: absolute;
         top: 2070px;
     }
+}
+
+// =================================================================================================
+
+
+.footer-container {
+    margin-left: 2rem;
+    img {
+        margin-bottom: 30px;
+    }
+    .icon {
+        margin-left: 16px;
+    }
+    i {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+    .footer-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #555555;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
+
+    .primary {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #555555;
+        margin-bottom: 28px;
+    }
+    .secondary {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #555555;
+        margin-bottom: 12px;
+        margin-top: 0;
+    }
+    margin-bottom: 40px;
+}
+.copy {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #999999;
+    margin-left: 2rem;
+    margin-bottom: 105px;
 }
