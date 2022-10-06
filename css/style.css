@@ -27,40 +27,49 @@
     color: #FF3998;
     margin-right: 80px;
   }
+  .launching {
+    margin-left: 80px;
+    margin-top: 80px;
+  }
+  .launching .launching-header {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 116px;
+    width: 620px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .launching .launching-image {
+    position: absolute;
+    height: 675px;
+    top: 120px;
+    left: 700px;
+  }
+  .launching .launching-text {
+    width: 537px;
+    margin-bottom: 41px;
+  }
+  .launching button {
+    margin-bottom: 200px;
+  }
+  .background {
+    height: 320px;
+    margin-left: 80px;
+  }
+  .background .bg {
+    position: absolute;
+    left: 0;
+    margin-left: 80px;
+  }
+  .background .bg-text {
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-top: 140px;
+    width: 620px;
+  }
 }
-.launching {
-  margin-left: 80px;
-  margin-top: 80px;
-}
-.launching .launching-header {
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 116px;
-  width: 620px;
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-.launching .launching-image {
-  position: absolute;
-  height: 675px;
-  top: 120px;
-  left: 700px;
-}
-.launching .launching-text {
-  width: 537px;
-  margin-bottom: 41px;
-}
-.launching button {
-  margin-bottom: 200px;
-}
-
 body {
   font-family: "inter";
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .colorful-button {
@@ -147,8 +156,6 @@ header .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 428px;
-  overflow: hidden;
 }
 
 .bg {
@@ -156,17 +163,11 @@ header .flex {
   left: -20px;
   z-index: -1;
   height: 326px;
-  max-width: 428;
-  overflow: hidden;
 }
 
 .bg-text {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-left: 2rem;
-  margin-right: 2rem;
   margin-top: 80px;
   width: 364px;
 }
@@ -441,29 +442,44 @@ header .flex {
     color: #FF3998;
     margin-right: 80px;
   }
-}
-.launching {
-  margin-left: 80px;
-  margin-top: 80px;
-}
-.launching .launching-header {
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 116px;
-  width: 620px;
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-.launching .launching-image {
-  position: absolute;
-  height: 675px;
-  top: 120px;
-  left: 700px;
-}
-.launching .launching-text {
-  width: 537px;
-  margin-bottom: 41px;
-}
-.launching button {
-  margin-bottom: 200px;
+  .launching {
+    margin-left: 80px;
+    margin-top: 80px;
+  }
+  .launching .launching-header {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 116px;
+    width: 620px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .launching .launching-image {
+    position: absolute;
+    height: 675px;
+    top: 120px;
+    left: 700px;
+  }
+  .launching .launching-text {
+    width: 537px;
+    margin-bottom: 41px;
+  }
+  .launching button {
+    margin-bottom: 200px;
+  }
+  .background {
+    height: 320px;
+    margin-left: 80px;
+  }
+  .background .bg {
+    position: absolute;
+    left: 0;
+    margin-left: 80px;
+  }
+  .background .bg-text {
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-top: 140px;
+    width: 620px;
+  }
 }/*# sourceMappingURL=style.css.map */

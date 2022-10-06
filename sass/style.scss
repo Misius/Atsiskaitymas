@@ -7,11 +7,6 @@
 body {
     font-family: 'inter'; 
 }
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 .colorful-button {
     cursor: pointer;
     width: 188px;
@@ -101,8 +96,6 @@ header {
 .background {
     height: 326px;
     display: flex;
-    max-width: 428px;
-    overflow: hidden;
 }
 
 .bg {
@@ -110,16 +103,11 @@ header {
     left: -20px;
     z-index: -1;
     height: 326px;
-    max-width: 428;
-    overflow: hidden;
-
 }
 
 .bg-text {
-    align-items: flex-end;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 2rem;
-    margin-right: 2rem;
     margin-top: 80px;
     width: 364px;
 }
