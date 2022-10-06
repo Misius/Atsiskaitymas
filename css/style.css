@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&display=swap");
 body {
   font-family: "inter";
-  overflow: hidden;
 }
 
 .colorful-button {
@@ -252,4 +251,56 @@ header .flex {
   line-height: 100%;
   color: #777777;
   margin-top: 0;
+}
+
+.divider {
+  width: 428px;
+  height: 2px;
+  background-color: #EEEEEE;
+  margin-top: 92px;
+  margin-bottom: 62px;
+}
+
+.divider2 {
+  width: 428px;
+  height: 2px;
+  background-color: #EEEEEE;
+  margin-bottom: 4rem;
+}
+
+.soon {
+  margin-left: 2rem;
+}
+.soon .soon-pink {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF3998;
+  margin-bottom: 24px;
+}
+.soon .soon-header {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 68px;
+  width: 274px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.soon .soon-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+  width: 207px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.soon button {
+  margin-bottom: 66px;
+}
+.soon .img {
+  position: absolute;
+  top: 2070px;
 }/*# sourceMappingURL=style.css.map */
