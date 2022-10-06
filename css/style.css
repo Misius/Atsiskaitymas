@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&display=swap");
 body {
   font-family: "inter";
+  overflow: hidden;
 }
 
 .colorful-button {
@@ -46,6 +47,9 @@ header .flex {
   height: 340px;
   top: 60px;
   left: 240px;
+  max-width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .launching {
@@ -88,13 +92,17 @@ header .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 428px;
+  overflow: hidden;
 }
 
 .bg {
   position: absolute;
-  left: -100px;
-  height: 326px;
+  left: -20px;
   z-index: -1;
+  height: 326px;
+  max-width: 428;
+  overflow: hidden;
 }
 
 .bg-text {
@@ -105,6 +113,7 @@ header .flex {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 80px;
+  width: 364px;
 }
 
 .bg-text-header {
@@ -140,4 +149,107 @@ header .flex {
      object-fit: cover;
   -o-object-position: 0 0;
      object-position: 0 0;
+}
+
+.auction {
+  margin-left: 2rem;
+}
+.auction-header {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+.auction-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+  margin-top: 1rem;
+  margin-bottom: 40px;
+}
+.auction-text a {
+  color: #555555;
+  font-weight: 500;
+}
+
+.auction-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.auction-card .height {
+  height: 278px;
+  margin-right: 40px;
+}
+.auction-card .auction-card-bottom {
+  background-color: #EEEEEE;
+  width: 290px;
+  height: 122px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.auction-card .auction-card-bottom .left-side {
+  margin-left: 24px;
+  margin-top: 24px;
+}
+.auction-card .auction-card-bottom .left-side .line1 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FF8139;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.auction-card .auction-card-bottom .left-side .line2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #111111;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.auction-card .auction-card-bottom .left-side .line3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #777777;
+  margin-top: 0;
+}
+.auction-card .auction-card-bottom .right-side {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+  text-align: right;
+}
+.auction-card .auction-card-bottom .right-side .img {
+  position: absolute;
+  left: 190px;
+}
+.auction-card .auction-card-bottom .right-side .line1 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #777777;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.auction-card .auction-card-bottom .right-side .line2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.auction-card .auction-card-bottom .right-side .line3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #777777;
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
