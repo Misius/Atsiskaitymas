@@ -1,0 +1,140 @@
+@media screen and(min-width:429px) {
+    header {
+        margin-top: 70px;
+        .logo {
+            margin-left: 80px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        .bars {
+            display: none;
+        }
+        .menu {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            color: #555555;
+            text-decoration: none;
+            margin-left: 28px;
+            margin-top: 10px;
+        }
+        .last {
+            color: #FF3998;
+            margin-right: 80px;
+        }
+    }
+    .launching {
+        margin-left: 80px;
+        margin-top: 80px;
+        .launching-header {
+            font-weight: 900;
+            font-size: 96px;
+            line-height: 116px;
+            width: 620px;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        .launching-image {
+            position: absolute;
+            height: 675px;
+            top: 120px;
+            left: 700px;
+            width: 675px;
+        }
+        .launching-text {
+            width: 537px;
+            margin-bottom: 41px;
+        }
+        button {
+            margin-bottom: 140px;
+        }
+
+    }
+    .background {
+        height: 320px;
+        width: 620px;
+        margin-left: 80px;
+        margin-right: 80px;
+        .phone-bg-parent {
+            display: none;
+        }
+        .bg {
+            display: block;
+            position: absolute;
+            left: 0;
+            margin-left: 80px;
+        }
+        .bg-text {
+            margin-bottom: 2rem;
+            margin-left: 4rem;
+            margin-top: 140px;
+            width: 620px;
+        }
+        
+    }
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 10rem 80px 10rem 80px;
+        gap: 106px;
+        .display-none {
+            display: block;
+        } 
+        .logo1 {
+            width: 240px;
+            
+        }
+    }
+    .auction {
+        margin-left: 80px;
+    }
+    .soon-container {
+        margin-left: 80px;
+        margin-right: 80px;
+        .divider {
+            margin-bottom: 120px;
+        }
+        .divider3 {
+            display: none;
+        }
+        .soon {
+            margin-left: 0;
+            .soon-header {
+                width: 620px;
+            }
+            .soon-text {
+                width: 537px;
+            }
+            button {
+                margin-bottom: 120px;
+            }
+            .img {
+                top: 2272.5px;
+                left: 900px;
+               
+            }
+        }
+    }
+    .super-footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 80px;
+        margin-top: 80px;
+        margin-right: 80px;
+        margin-bottom: 71px;
+        .footer-grid {
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            grid-column: span 2;
+            .copy2 {
+                display: block;
+            }
+        }
+    }
+}
