@@ -54,9 +54,14 @@
     }
     .background {
         height: 320px;
+        width: 620px;
         margin-left: 80px;
         margin-right: 80px;
+        .phone-bg-parent {
+            display: none;
+        }
         .bg {
+            display: block;
             position: absolute;
             left: 0;
             margin-left: 80px;
@@ -91,6 +96,9 @@
         .divider {
             margin-bottom: 120px;
         }
+        .divider3 {
+            display: none;
+        }
         .soon {
             margin-left: 0;
             .soon-header {
@@ -103,7 +111,7 @@
                 margin-bottom: 120px;
             }
             .img {
-                top: 2302px;
+                top: 2272.5px;
                 left: 900px;
                
             }
@@ -129,5 +137,4 @@
             }
         }
     }
-
 }

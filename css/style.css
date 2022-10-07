@@ -56,10 +56,15 @@
   }
   .background {
     height: 320px;
+    width: 620px;
     margin-left: 80px;
     margin-right: 80px;
   }
+  .background .phone-bg-parent {
+    display: none;
+  }
   .background .bg {
+    display: block;
     position: absolute;
     left: 0;
     margin-left: 80px;
@@ -92,6 +97,9 @@
   .soon-container .divider {
     margin-bottom: 120px;
   }
+  .soon-container .divider3 {
+    display: none;
+  }
   .soon-container .soon {
     margin-left: 0;
   }
@@ -105,7 +113,7 @@
     margin-bottom: 120px;
   }
   .soon-container .soon .img {
-    top: 2302px;
+    top: 2272.5px;
     left: 900px;
   }
   .super-footer-container {
@@ -140,10 +148,11 @@ body {
   cursor: pointer;
   width: 188px;
   height: 75px;
-  background-color: #fff;
-  border: 4px solid #FF3998;
-  border-color: linear-gradient(to right, #FF3998 0%, #FF3939 100%) 1;
   border-radius: 100px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  background: linear-gradient(white, white, white, white) padding-box, linear-gradient(60deg, #FF3998, #FF3939, #FF3939, #39FFA0) border-box;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
@@ -179,7 +188,7 @@ header .menu {
   top: 60px;
   left: 260px;
   max-width: auto;
-  width: 190px;
+  width: 168px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 0;
@@ -223,26 +232,40 @@ header .menu {
 
 .background {
   height: 326px;
+  width: 428px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
-
-.bg {
+.background .bg {
   position: absolute;
   left: -20px;
   z-index: -1;
   height: 326px;
+  display: none;
 }
-
-.bg-text {
+.background .phone-bg-parent {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.background .phone-bg-parent .phone-bg {
+  z-index: -2;
+  height: 326px;
+  width: 428px;
+  position: absolute;
+  background: linear-gradient(60deg, #FF3998, #FF3939, #FF3939, #39FFA0);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.background .bg-text {
   margin-bottom: 1rem;
   margin-left: 2rem;
   margin-top: 80px;
   width: 364px;
+  z-index: 10;
 }
-
-.bg-text-header {
+.background .bg-text .bg-text-header {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -251,8 +274,7 @@ header .menu {
   color: #111111;
   padding-top: 0;
 }
-
-.bg-text-p {
+.background .bg-text .bg-text-p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -355,9 +377,12 @@ header .menu {
   margin-top: 24px;
   text-align: right;
 }
+.auction-card .auction-card-bottom .right-side .img-text {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
 .auction-card .auction-card-bottom .right-side .img {
-  position: absolute;
-  left: 190px;
+  margin-right: 8px;
 }
 .auction-card .auction-card-bottom .right-side .line1 {
   font-weight: 500;
@@ -369,7 +394,7 @@ header .menu {
 }
 .auction-card .auction-card-bottom .right-side .line2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
   margin-bottom: 12px;
   margin-top: 0;
@@ -382,25 +407,32 @@ header .menu {
   margin-top: 0;
 }
 
-.divider {
+.soon-container .divider {
   width: 100%;
   height: 2px;
   background-color: #EEEEEE;
   margin-top: 92px;
   margin-bottom: 62px;
 }
-
-.divider2 {
+.soon-container .divider2 {
   width: 100%;
   height: 2px;
   background-color: #EEEEEE;
   margin-bottom: 4rem;
 }
-
-.soon {
+.soon-container .divider3 {
+  width: 100%;
+  height: 2px;
+  background: #111111;
+  opacity: 0.08;
+  position: absolute;
+  top: 2235px;
+  z-index: 1;
+}
+.soon-container .soon {
   margin-left: 2rem;
 }
-.soon .soon-pink {
+.soon-container .soon .soon-pink {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -409,7 +441,7 @@ header .menu {
   color: #FF3998;
   margin-bottom: 24px;
 }
-.soon .soon-header {
+.soon-container .soon .soon-header {
   font-weight: 900;
   font-size: 56px;
   line-height: 68px;
@@ -417,7 +449,7 @@ header .menu {
   margin-top: 0;
   margin-bottom: 24px;
 }
-.soon .soon-text {
+.soon-container .soon .soon-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
@@ -426,10 +458,10 @@ header .menu {
   margin-top: 0;
   margin-bottom: 2rem;
 }
-.soon button {
+.soon-container .soon button {
   margin-bottom: 66px;
 }
-.soon .img {
+.soon-container .soon .img {
   position: absolute;
   top: 2070px;
 }
@@ -554,10 +586,15 @@ header .menu {
   }
   .background {
     height: 320px;
+    width: 620px;
     margin-left: 80px;
     margin-right: 80px;
   }
+  .background .phone-bg-parent {
+    display: none;
+  }
   .background .bg {
+    display: block;
     position: absolute;
     left: 0;
     margin-left: 80px;
@@ -590,6 +627,9 @@ header .menu {
   .soon-container .divider {
     margin-bottom: 120px;
   }
+  .soon-container .divider3 {
+    display: none;
+  }
   .soon-container .soon {
     margin-left: 0;
   }
@@ -603,7 +643,7 @@ header .menu {
     margin-bottom: 120px;
   }
   .soon-container .soon .img {
-    top: 2302px;
+    top: 2272.5px;
     left: 900px;
   }
   .super-footer-container {
